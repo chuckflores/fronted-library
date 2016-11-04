@@ -1,0 +1,26 @@
+header {
+  align-items: center;
+  background-color: #EFF4F7;
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  justify-content: space-between;
+  padding: 0 $gutter;
+  width: 100%;
+}
+
+.nav-links {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  li {
+    padding-right: $gutter;
+  }
+
+  li:last-child {
+    padding-right: 0;
+  }
+}

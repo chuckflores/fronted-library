@@ -28,14 +28,14 @@ $medium-gray: #999;
 $light-gray: #ddd;
 
 // Brand Colors
-$brand-color: #24E29E;
+$brand-primary-color: #24E29E;
+$brand-secondary-color: #FC6C17;
 
-// Header Colors
-$header-color: #EAF4F0;
+
 
 // Font Colors
 $base-font-color: $black;
-$action-color: $brand-color;
+$action-color: $brand-primary-color;
 
 // Border
 $base-border-color: $light-gray;
@@ -58,3 +58,6 @@ $mobile: new-breakpoint(max-width 748px 4);
 
 // Nav Bar Height
 $navbar-height: 72px;
+
+// Nav Bar Colors
+$navbar-color: #EAF4F0;

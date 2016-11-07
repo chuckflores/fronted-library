@@ -3,12 +3,15 @@ $hamburger-color: $black;
 $hamburger-line-height: 2px;
 
 // Animation Timing
-$nav-timing: 400ms;
+$nav-timing: 500ms;
+
+// Link Colors
+$navbar-primary-link-color: $brand-primary-color;
 
 // ******Nav Bar****** /
 .nav-bar {
   align-items: center;
-  background-color: $header-color;
+  background-color: $navbar-color;
   display: flex;
   height: $navbar-height;
   justify-content: space-between;
@@ -21,43 +24,37 @@ $nav-timing: 400ms;
 
 .nav-logo {
   float: left;
+  height: auto;
   line-height: 0;
   padding-left: $gutter;
 }
 
 .nav-items {
+  align-items: center;
+  display: flex;
   padding-right: $gutter;
-  padding-top: 30px;
-
-
-  ul {
-    vertical-align: center;
-    // align-items: center;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-  }
 }
 
 .nav-items li {
+  color: darken($navbar-primary-link-color, 10%);
   display: inline-block;
   font-size: 12px;
-  text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1.2px;
-  line-height: 1.3;
+  line-height: 1.2;
   list-style: none;
   padding-left: $gutter;
-  margin-bottom: 3em;
   text-align: right;
+  text-transform: uppercase;
 
   // Active Nav Item Border Bottom
   // &.active {
-  //   border-bottom: 2px solid $brand-color;
+  //   border-bottom: 2px solid $brand-primary-color;
   // }
 }
 
 .nav-items li:hover {
+  color: $navbar-primary-link-color;
 }
 
 #menu {
@@ -89,6 +86,10 @@ $nav-timing: 400ms;
     .three {
       transform: (rotate(-45deg) translate(4px, -8px));
     }
+
+    .nav-items li {
+      margin-bottom: 3em;
+    }
   }
 
   #menu {
@@ -105,7 +106,7 @@ $nav-timing: 400ms;
       .one,
       .two,
       .three {
-        background: lighten($hamburger-color, 20%);
+        background: lighten($hamburger-color, 30%);
       }
     }
   }
@@ -124,15 +125,18 @@ $nav-timing: 400ms;
 
   .nav-items li {
     display: none;
+    opacity: 0;
+    transition: opacity $base-timing 1s;
 
     &.show {
       display: block;
+      opacity: 1;
     }
 
     // Active Border Bottom
     // &.active {
     //   border-bottom: none;
-    //   a {color: $brand-color;}
+    //   a {color: $brand-primary-color;}
     // }
   }
 }

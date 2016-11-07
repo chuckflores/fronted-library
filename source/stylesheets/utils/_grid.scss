@@ -18,13 +18,13 @@
   }
 }
 
-.container {
-  @include outer-container;
-}
-
 @include col-x-list;
 
 @include shift-x-list;
+
+.container {
+  @include outer-container();
+}
 
 .shift-1,
 .shift-2,

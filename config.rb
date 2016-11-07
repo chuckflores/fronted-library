@@ -49,4 +49,4 @@ activate :deploy do |deploy|
   deploy.build_before = true
 end
 
-# activate :directory_indexes
+activate :directory_indexes

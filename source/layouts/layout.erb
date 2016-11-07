@@ -7,19 +7,17 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Middleman" %></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
+
   </head>
 
   <body class="<%= page_classes %>">
     <div class="nav-bar">
-      <a href="/index.html">
+      <% link_to '/index.html' do %>
         <div class="nav-logo">
-          <img src="../../images/brand/logo.svg" alt="" />
+          <%= image_tag "images/brand/logo.svg" %>
         </div>
-      </a>
+      <% end %>
       <div id="menu">
         <div class="one"></div>
         <div class="two"></div>
@@ -37,5 +35,8 @@
     </div>
 
     <%= yield %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <%= javascript_include_tag :all %>
   </body>
 </html>

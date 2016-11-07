@@ -1,0 +1,6 @@
+.text-container {
+
+  @include media($mobile) {
+    padding: 0 $gutter;
+  }
+}

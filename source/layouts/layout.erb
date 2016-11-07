@@ -7,14 +7,33 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Middleman" %></title>
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
   </head>
 
   <body class="<%= page_classes %>">
+    <div class="nav-bar">
+      <div class="nav-logo">
+        <img src="../../images/brand/logo.svg" alt="" />
+      </div>
+      <div id="menu">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <div class="nav-items">
+        <ul>
+          <a href="#"><li class="nav_active">Home</li></a>
+          <a href="#"><li class="nav_active">Services and Rates</li></a>
+          <a href="#"><li class="nav_active">About</li></a>
+          <a href="#"><li class="nav_active">Team</li></a>
+          <a href="#"><li class="nav_active">Contact</li></a>
+        </ul>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>

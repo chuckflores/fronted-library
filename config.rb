@@ -2,6 +2,8 @@
 # Page options, layouts, aliases and proxies
 ###
 
+config[:css_dir]      =    './stylesheets'
+
 # Per-page layout changes:
 #
 # With no layout

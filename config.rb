@@ -2,8 +2,6 @@
 # Page options, layouts, aliases and proxies
 ###
 
-config[:css_dir]      =    './stylesheets'
-
 # Per-page layout changes:
 #
 # With no layout
@@ -38,6 +36,8 @@ end
 
 # Build-specific configuration
 configure :build do
+  activate :relative_assets
+  
   # Minify CSS on build
   # activate :minify_css
 

@@ -819,6 +819,12 @@ hr {
   font-size: 18px;
   line-height: 1.5; }
 
+.txt-center {
+  text-align: center; }
+
+.bg-1 {
+  background-color: #F6F8F8; }
+
 .nav-bar {
   align-items: center;
   background-color: #EAF4F0;
@@ -926,5 +932,5 @@ hr {
   padding: 2em 0; }
 
 @media screen and (max-width: 748px) {
-  .text-container {
+  .txt-container {
     padding: 0 2em; } }

@@ -8,8 +8,8 @@ Error: Undefined variable: "$black".
 3: @import "navbar/navbar-dropdown";
 4: @import "navbar/navbar-cta";
 5: 
-6: @import "section";
-7: @import "text-boxes";
+6: @import "sidebar/sidebar";
+7: 
 
 Backtrace:
 /Users/chuckflores/Sites/frontend-library/source/stylesheets/components/navbar/_navbar-base.scss:2
@@ -141,4 +141,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 2 of /Users/chuckflores/Sites/frontend-library/source/stylesheets/components/navbar/_navbar-base.scss\A         from line 2 of /Users/chuckflores/Sites/frontend-library/source/stylesheets/components/components.scss\A \A 1: \A 2: @import \"navbar/navbar-base\";\A 3: @import \"navbar/navbar-dropdown\";\A 4: @import \"navbar/navbar-cta\";\A 5: \A 6: @import \"section\";\A 7: @import \"text-boxes\";"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 2 of /Users/chuckflores/Sites/frontend-library/source/stylesheets/components/navbar/_navbar-base.scss\A         from line 2 of /Users/chuckflores/Sites/frontend-library/source/stylesheets/components/components.scss\A \A 1: \A 2: @import \"navbar/navbar-base\";\A 3: @import \"navbar/navbar-dropdown\";\A 4: @import \"navbar/navbar-cta\";\A 5: \A 6: @import \"sidebar/sidebar\";\A 7: "; }

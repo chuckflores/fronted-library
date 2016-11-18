@@ -3,7 +3,7 @@ $hamburger-color: $black;
 $hamburger-line-height: 2px;
 
 // Animation Timing
-$nav-timing: 500ms;
+$nav-duration: $base-duration;
 
 // Link Colors
 $navbar-primary-link-color: $brand-primary-color;
@@ -17,13 +17,12 @@ $navbar-primary-link-color: $brand-primary-color;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  transition: all $base-timing $nav-timing;
+  transition: all $base-timing $nav-duration;
   width: 100%;
   z-index: 9999;
 }
 
 .nav-logo {
-  float: left;
   height: auto;
   line-height: 0;
   padding-left: $gutter;
@@ -32,20 +31,41 @@ $navbar-primary-link-color: $brand-primary-color;
 .nav-items {
   align-items: center;
   display: flex;
-  padding-right: $gutter;
+  flex-direction: row;
+  top: 0;
+
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    }
+
+  li {
+    background-color: $navbar-color;
+    height: $navbar-height;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: all $base-timing $nav-duration;
+
+    &:hover {
+      background-color: rgba(256,256,256,0.5);
+    }
+  }
 }
 
 .nav-items li {
   color: darken($navbar-primary-link-color, 10%);
-  display: inline-block;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.2px;
   line-height: 1.2;
   list-style: none;
   padding-left: $gutter;
+  padding-right: $gutter;
   text-align: right;
   text-transform: uppercase;
+  transition: all $base-timing $nav-duration;
 
   // Active Nav Item Border Bottom
   // &.active {
@@ -71,9 +91,14 @@ $navbar-primary-link-color: $brand-primary-color;
 /****** Mobile Version ******/
 
 @include media($mobile) {
+
   .nav-bar.expand {
     height: 100vh;
-    transition: all $base-timing $nav-timing;
+    transition: all $base-timing $nav-duration;
+
+    .nav-logo {
+      width: 75%;
+    }
 
     .one {
       transform: (rotate(45deg) translate(4px, 6px));
@@ -87,8 +112,24 @@ $navbar-primary-link-color: $brand-primary-color;
       transform: (rotate(-45deg) translate(4px, -8px));
     }
 
-    .nav-items li {
-      margin-bottom: 3em;
+    .nav-items {
+      text-align: right;
+
+      ul {
+        align-items: flex-end;
+        flex-direction: column;
+        padding-right: $gutter;
+      }
+
+      li {
+        height: auto;
+        margin-top: 2em;
+        padding: 0;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
     }
   }
 
@@ -127,6 +168,8 @@ $navbar-primary-link-color: $brand-primary-color;
     display: none;
     opacity: 0;
     transition: opacity $base-timing 1s;
+
+
 
     &.show {
       display: block;

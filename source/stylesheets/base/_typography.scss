@@ -29,6 +29,10 @@ a {
   text-decoration: none;
   transition: color $base-duration $base-timing;
 
+  a:visited {
+    color: $action-color;
+  }
+
   &:active,
   &:focus,
   &:hover {

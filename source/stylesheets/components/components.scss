@@ -1,5 +1,7 @@
 
-@import "navbar";
+@import "navbar/navbar-base";
+@import "navbar/navbar-dropdown";
+@import "navbar/navbar-cta";
 
 @import "section";
 @import "text-boxes";

@@ -1,26 +1,20 @@
 /*
-Error: Undefined mixin 'span-columns'.
-        on line 5 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/_grid.scss, in `span-columns'
-        from line 5 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/_grid.scss, in `col-x-list'
-        from line 21 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/_grid.scss
-        from line 1 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/utils.scss
+Error: Undefined variable: "$white".
+        on line 2 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/components/sidebar/sidebar-header.scss
 
-1: @import "grid";
-2: 
-3: @import "font-helpers";
-4: 
-5: @import "backgrounds";
+1: .sidebar-headerbar {
+2:   background-color: $white;
+3:   top: 0;
+4:   left: 0;
+5:   right: 0;
+6:   position: fixed;
+7:   height: $navbar-height;
 
 Backtrace:
-/Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/_grid.scss:5:in `span-columns'
-/Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/_grid.scss:5:in `col-x-list'
-/Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/_grid.scss:21
-/Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/utils.scss:1
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/components/sidebar/sidebar-header.scss:2
+/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
 /Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -32,50 +26,6 @@ Backtrace:
 /Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
 /Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
 /Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:272:in `block (3 levels) in visit_for'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:272:in `map'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:272:in `block (2 levels) in visit_for'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:268:in `each'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:268:in `map'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:268:in `block in visit_for'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:267:in `visit_for'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:366:in `block (4 levels) in visit_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:366:in `map'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:366:in `block (3 levels) in visit_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:366:in `block (2 levels) in visit_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:84:in `perform_arguments'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:361:in `block in visit_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
 /Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/chuckflores/.rvm/gems/ruby-2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -187,4 +137,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'span-columns'.\A         on line 5 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/_grid.scss, in `span-columns'\A         from line 5 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/_grid.scss, in `col-x-list'\A         from line 21 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/_grid.scss\A         from line 1 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/utils/utils.scss\A \A 1: @import \"grid\";\A 2: \A 3: @import \"font-helpers\";\A 4: \A 5: @import \"backgrounds\";"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 2 of /Users/chuckflores/Sites/frontend-dashboard/source/stylesheets/components/sidebar/sidebar-header.scss\A \A 1: .sidebar-headerbar {\A 2:   background-color: $white;\A 3:   top: 0;\A 4:   left: 0;\A 5:   right: 0;\A 6:   position: fixed;\A 7:   height: $navbar-height;"; }
